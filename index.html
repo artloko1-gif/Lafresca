@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Fresca Cantina & Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'fresca-bronze': '#c5925a', // Copper/Bronze from PDF visuals
+              'fresca-dark': '#1a1a1a',
+              'fresca-light': '#fdfbf7', // Warm off-white
+            },
+            fontFamily: {
+              // Logo uses Playfair Display (Serif)
+              serif: ['"Playfair Display"', 'serif'],
+              // Everything else uses Montserrat
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-fresca-light text-fresca-dark font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
