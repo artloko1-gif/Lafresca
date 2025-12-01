@@ -1,4 +1,5 @@
 import React from 'react';
+import { EditableText } from './Editable';
 
 export const Stats: React.FC = () => {
   return (
@@ -6,20 +7,20 @@ export const Stats: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-stone-100">
           <div className="p-4">
-            <div className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans">20 000+</div>
-            <div className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans">Strávníků denně</div>
+            <EditableText id="stat-1-num" as="div" defaultText="20 000+" className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans" />
+            <EditableText id="stat-1-label" as="div" defaultText="Strávníků denně" className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans" />
           </div>
           <div className="p-4">
-            <div className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans">45</div>
-            <div className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans">Provozů v ČR</div>
+             <EditableText id="stat-2-num" as="div" defaultText="45" className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans" />
+             <EditableText id="stat-2-label" as="div" defaultText="Provozů v ČR" className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans" />
           </div>
           <div className="p-4">
-            <div className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans">550</div>
-            <div className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans">Kolegů v týmu</div>
+            <EditableText id="stat-3-num" as="div" defaultText="550" className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans" />
+            <EditableText id="stat-3-label" as="div" defaultText="Kolegů v týmu" className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans" />
           </div>
           <div className="p-4">
-            <div className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans">193k</div>
-            <div className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans">Káv měsíčně</div>
+             <EditableText id="stat-4-num" as="div" defaultText="193k" className="text-4xl md:text-5xl font-bold text-fresca-dark mb-2 font-sans" />
+             <EditableText id="stat-4-label" as="div" defaultText="Káv měsíčně" className="text-fresca-bronze text-sm uppercase tracking-widest font-bold font-sans" />
           </div>
         </div>
       </div>
